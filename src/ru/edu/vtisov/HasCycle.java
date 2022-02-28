@@ -1,15 +1,5 @@
 package ru.edu.vtisov;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
 public class HasCycle {
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;
