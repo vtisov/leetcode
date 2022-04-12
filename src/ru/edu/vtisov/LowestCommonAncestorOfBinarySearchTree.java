@@ -11,7 +11,6 @@ package ru.edu.vtisov;
  */
 
 public class LowestCommonAncestorOfBinarySearchTree {
-
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         TreeNode node = root;
         while (node != null) {
@@ -25,3 +24,13 @@ public class LowestCommonAncestorOfBinarySearchTree {
         return node;
     }
 }
+
+// public class LowestCommonAncestorOfBinarySearchTree {
+//     public TreeNode lowestCommonAncestor(TreeNode node, TreeNode p, TreeNode q) {
+//         if (node.val < p.val && node.val < q.val)
+//             return lowestCommonAncestor(node.right, p, q);
+//         else if (node.val > p.val && node.val > q.val)
+//             return lowestCommonAncestor(node.left, p, q);
+//         return node;
+//     }
+// }
