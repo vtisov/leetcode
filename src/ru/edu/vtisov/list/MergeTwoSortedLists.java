@@ -1,17 +1,7 @@
 package ru.edu.vtisov.list;
 
-import ru.edu.vtisov.list.ListNode;
+// https://leetcode.com/problems/merge-two-sorted-lists/
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode stub = new ListNode(-1);
@@ -28,7 +18,6 @@ public class MergeTwoSortedLists {
             }
             result = result.next;
         }
-
         result.next = head1 == null ? head2 : head1;
         return stub.next;
     }

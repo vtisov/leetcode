@@ -1,6 +1,6 @@
 package ru.edu.vtisov.list;
 
-import ru.edu.vtisov.list.ListNode;
+// https://leetcode.com/problems/reverse-linked-list/
 
 public class ReverseList {
     public ListNode reverseList(ListNode head) {
