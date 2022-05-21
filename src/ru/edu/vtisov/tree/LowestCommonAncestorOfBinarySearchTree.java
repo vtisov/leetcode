@@ -1,16 +1,6 @@
 package ru.edu.vtisov.tree;
 
-import ru.edu.vtisov.tree.TreeNode;
-
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
 public class LowestCommonAncestorOfBinarySearchTree {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -23,7 +13,7 @@ public class LowestCommonAncestorOfBinarySearchTree {
             else
                 return node;
         }
-        return node;
+        return null;
     }
 }
 

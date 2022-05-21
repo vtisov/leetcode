@@ -1,6 +1,5 @@
 package ru.edu.vtisov.tree;
 
-
 public class TreeNode {
     int val;
     TreeNode left;
