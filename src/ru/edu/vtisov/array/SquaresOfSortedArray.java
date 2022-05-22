@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/squares-of-a-sorted-array/
+
 public class SquaresOfSortedArray {
     public int[] sortedSquares(int[] nums) {
         int n = nums.length;

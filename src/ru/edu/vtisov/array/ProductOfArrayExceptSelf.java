@@ -2,6 +2,8 @@ package ru.edu.vtisov.array;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/product-of-array-except-self/
+
 public class ProductOfArrayExceptSelf {
 
     public int[] productExceptSelf(int[] nums) {

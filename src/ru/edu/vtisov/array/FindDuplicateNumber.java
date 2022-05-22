@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/find-the-duplicate-number/
+
 public class FindDuplicateNumber {
 
     public int findDuplicate(int[] nums) {

@@ -3,6 +3,8 @@ package ru.edu.vtisov.array;
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/find-the-duplicate-number/
+
 public class FindDuplicates {
     public List<Integer> findDuplicates(int[] nums) {
         List<Integer> result = new ArrayList<>();

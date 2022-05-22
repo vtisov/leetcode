@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/maximum-subarray/
+
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
         int max = nums[0];

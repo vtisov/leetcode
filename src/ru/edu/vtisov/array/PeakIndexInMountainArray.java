@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/peak-index-in-a-mountain-array/
+
 public class PeakIndexInMountainArray {
     public int peakIndexInMountainArray(int[] arr) {
         int left = 0;

@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/range-sum-query-immutable/
+
 public class NumArray {
 
     private final int[] sum;
