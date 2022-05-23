@@ -2,7 +2,7 @@ package ru.edu.vtisov.list;
 
 // https://leetcode.com/problems/linked-list-cycle/
 
-public class HasCycle {
+public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;
         ListNode slow = head;
