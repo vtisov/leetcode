@@ -1,5 +1,7 @@
 package ru.edu.vtisov.string;
 
+// https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+
 public class FindSmallestLetterGreaterThanTarget {
     public char nextGreatestLetter(char[] letters, char target) {
         int left = 0;

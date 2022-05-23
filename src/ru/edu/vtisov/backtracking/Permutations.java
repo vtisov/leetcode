@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// https://leetcode.com/problems/permutations/
+
 public class Permutations {
 
     private final List<List<Integer>> results = new ArrayList<>();

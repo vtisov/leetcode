@@ -1,4 +1,6 @@
-package ru.edu.vtisov.dinamic;
+package ru.edu.vtisov.dp;
+
+// https://leetcode.com/problems/climbing-stairs/
 
 public class ClimbStairs {
 

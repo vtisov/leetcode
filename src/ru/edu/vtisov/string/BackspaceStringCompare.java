@@ -1,5 +1,7 @@
 package ru.edu.vtisov.string;
 
+// https://leetcode.com/problems/backspace-string-compare/
+
 public class BackspaceStringCompare {
     private int getCurrentIndex(String s, int current) {
         int i = current;
