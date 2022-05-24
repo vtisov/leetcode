@@ -2,6 +2,8 @@ package ru.edu.vtisov.matrix;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/set-matrix-zeroes/
+
 public class SetMatrixZeroes {
 
     public void setZeroes(int[][] matrix) {
