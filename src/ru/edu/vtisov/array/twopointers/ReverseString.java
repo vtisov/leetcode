@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.twopointers;
 
+//https://leetcode.com/problems/reverse-string/
+
 public class ReverseString {
     public void reverseString(char[] s) {
         int i = 0;
