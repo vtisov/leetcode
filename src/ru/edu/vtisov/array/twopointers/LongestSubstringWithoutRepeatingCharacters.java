@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.twopointers;
 
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {
