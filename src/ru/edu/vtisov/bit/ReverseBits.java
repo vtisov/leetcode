@@ -6,7 +6,7 @@ public class ReverseBits {
         int answer = 0;
         for (int i = 31; i >= 0; i--) {
             int current = (n >> i) & 1;
-            if (current != 0) answer += (1 << (31 - i));
+            answer += (current << (31 - i));
         }
         return answer;
     }
