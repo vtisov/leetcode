@@ -1,6 +1,6 @@
 package ru.edu.vtisov.array.binarysearch;
 
-public class FindFirstAndLastPositionOfElementШnSortedArray {
+public class FindFirstAndLastPositionOfElementInSortedArray {
     public int[] searchRange(int[] nums, int target) {
         int first = binarySearch(nums, target, true);
         int second = binarySearch(nums, target, false);
