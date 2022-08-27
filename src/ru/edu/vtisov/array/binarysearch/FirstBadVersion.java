@@ -1,4 +1,4 @@
-package ru.edu.vtisov.array;
+package ru.edu.vtisov.array.binarysearch;
 
 public class FirstBadVersion extends VersionControl {
     public int firstBadVersion(int n) {

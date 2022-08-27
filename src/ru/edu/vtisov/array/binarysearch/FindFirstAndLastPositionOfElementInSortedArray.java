@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.binarysearch;
 
+// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 public class FindFirstAndLastPositionOfElementInSortedArray {
     public int[] searchRange(int[] nums, int target) {
         int first = binarySearch(nums, target, true);
