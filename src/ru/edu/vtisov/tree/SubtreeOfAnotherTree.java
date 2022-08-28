@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/subtree-of-another-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class SubtreeOfAnotherTree {
     public boolean isSubtree(TreeNode node, TreeNode subRoot) {
         if (node == null) return false;

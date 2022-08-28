@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/merge-two-binary-trees/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class MergeTwoBinaryTrees {
     public TreeNode mergeTrees(TreeNode node1, TreeNode node2) {
         if (node1 == null) return node2;

@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/diameter-of-binary-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class DiameterOfBinaryTree {
 
     private int diameter = 0;

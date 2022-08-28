@@ -1,9 +1,9 @@
-package ru.edu.vtisov.tree;
+package ru.edu.vtisov.util;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public  TreeNode right;
 
     TreeNode() {
     }

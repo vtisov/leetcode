@@ -3,6 +3,8 @@ package ru.edu.vtisov.dp;
 import java.util.Collections;
 import java.util.List;
 
+// https://leetcode.com/problems/triangle/
+
 public class Triangle {
     public int minimumTotal(List<List<Integer>> triangle) {
         if (triangle.size() == 1) return triangle.get(0).get(0);

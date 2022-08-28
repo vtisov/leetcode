@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class LowestCommonAncestorOfBinarySearchTree {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         TreeNode node = root;

@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/same-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class SameTree {
 
     public boolean isSameTree(TreeNode p, TreeNode q) {

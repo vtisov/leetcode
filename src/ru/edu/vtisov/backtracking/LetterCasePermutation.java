@@ -3,6 +3,8 @@ package ru.edu.vtisov.backtracking;
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/letter-case-permutation/
+
 public class LetterCasePermutation {
 
     private final List<String> result = new ArrayList<>();

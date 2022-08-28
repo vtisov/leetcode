@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/minimum-depth-of-binary-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class MinimumDepthOfBinaryTree {
 
     public int minDepth(TreeNode root) {
