@@ -2,6 +2,8 @@ package ru.edu.vtisov.stack;
 
 import java.util.LinkedList;
 
+// https://leetcode.com/problems/min-stack/
+
 public class MinStack {
 
     private final LinkedList<Integer> stack;
