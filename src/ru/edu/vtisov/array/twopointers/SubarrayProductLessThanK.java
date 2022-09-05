@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.twopointers;
 
+// https://leetcode.com/problems/subarray-product-less-than-k/
+
 public class SubarrayProductLessThanK {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         if (k <= 1) return 0;

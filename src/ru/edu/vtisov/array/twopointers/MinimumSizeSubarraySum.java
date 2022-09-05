@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.twopointers;
 
+// https://leetcode.com/problems/minimum-size-subarray-sum/
+
 public class MinimumSizeSubarraySum {
     public int minSubArrayLen(int target, int[] nums) {
         int min = Integer.MAX_VALUE;
