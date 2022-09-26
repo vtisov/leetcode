@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
+
 /* [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1]
     ------------- previousSum
     ----------------------------- sum
