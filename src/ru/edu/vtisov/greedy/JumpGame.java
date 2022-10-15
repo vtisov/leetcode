@@ -1,5 +1,7 @@
 package ru.edu.vtisov.greedy;
 
+// https://leetcode.com/problems/jump-game
+
 public class JumpGame {
     public boolean canJump(int[] nums) {
         int lastPos = nums.length - 1;
