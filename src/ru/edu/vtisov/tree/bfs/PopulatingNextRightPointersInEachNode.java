@@ -8,20 +8,19 @@ import java.util.LinkedList;
 
 public class PopulatingNextRightPointersInEachNode {
     public Node connect(Node root) {
-        if (root == null) return null;
         LinkedList<Node> queue = new LinkedList<>();
         queue.add(root);
-        while (!queue.isEmpty()) {
+        while(!queue.isEmpty()) {
             LinkedList<Node> temp = new LinkedList<>();
-            Node prev = null;
-            while (!queue.isEmpty()) {
-                Node node = queue.removeFirst();
-                if (node.left == null) continue;
-                temp.add(node.left);
-                temp.add(node.right);
-                if (prev != null) prev.next = node.left;
-                node.left.next = node.right;
-                prev = node.right;
+            Node stub = new Node();
+            Node previous = stub;
+            while(!queue.isEmpty()) {
+                Node current = queue.removeFirst();
+                if (current == null) continue;
+                temp.add(current.left);
+                temp.add(current.right);
+                previous.next = current;
+                previous = current;
             }
             queue = temp;
         }
