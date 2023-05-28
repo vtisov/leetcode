@@ -1,5 +1,7 @@
 package ru.edu.vtisov.tree.dfs;
 
+// https://leetcode.com/problems/number-of-islands/
+
 public class NumberOfIslands {
     public int numIslands(char[][] grid) {
         int count = 0;
