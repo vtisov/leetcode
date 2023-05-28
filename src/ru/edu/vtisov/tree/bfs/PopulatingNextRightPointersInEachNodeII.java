@@ -4,6 +4,8 @@ import ru.edu.vtisov.util.Node;
 
 import java.util.LinkedList;
 
+// https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+
 public class PopulatingNextRightPointersInEachNodeII {
     public Node connect(Node root) {
         LinkedList<Node> queue = new LinkedList<>();
