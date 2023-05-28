@@ -1,6 +1,8 @@
 
 package ru.edu.vtisov.tree.dfs;
 
+// https://leetcode.com/problems/number-of-provinces/
+
 public class NumberOfProvinces {
     public int findCircleNum(int[][] isConnected) {
         int sum = 0;
