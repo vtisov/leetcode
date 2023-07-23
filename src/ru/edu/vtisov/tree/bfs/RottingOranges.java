@@ -2,8 +2,12 @@ package ru.edu.vtisov.tree.bfs;
 
 // https://leetcode.com/problems/rotting-oranges/
 
-import java.util.HashSet;
+import ru.edu.vtisov.util.Pair;
 
+import java.util.HashSet;
+import java.util.Set;
+
+// TODO
 public class RottingOranges {
     public int orangesRotting(int[][] grid) {
         int rows = grid.length;
@@ -32,7 +36,6 @@ public class RottingOranges {
             }
             queue = temp;
             count++;
-            // if (rotted(grid)) return count;
         }
         return rotted(grid) ? count : -1;
 

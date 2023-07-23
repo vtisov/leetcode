@@ -1,4 +1,4 @@
-package ru.edu.vtisov.tree;
+package ru.edu.vtisov.util;
 
 public class Node {
     public int val;

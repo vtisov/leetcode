@@ -1,0 +1,14 @@
+-- https://leetcode.com/problems/nth-highest-salary/
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE OFF INT;
+  SET OFF = N-1;
+  RETURN (
+      # Write your MySQL query statement below.
+      SELECT DISTINCT SALARY
+      FROM EMPLOYEE
+      ORDER BY SALARY DESC
+      LIMIT 1 OFFSET OFF
+  );
+END

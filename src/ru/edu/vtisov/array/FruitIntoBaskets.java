@@ -11,7 +11,7 @@ public class FruitIntoBaskets {
         int result = 0;
         int left = 0;
         int k = 2;
-        Map<Integer, Integer> counter = new HashMap();
+        Map<Integer, Integer> counter = new HashMap<>();
         for (int right = 0; right < fruits.length; right++) {
             int current = fruits[right];
             if (!counter.containsKey(current)) counter.put(current, 0);

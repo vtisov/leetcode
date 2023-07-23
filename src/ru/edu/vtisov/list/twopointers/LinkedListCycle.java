@@ -1,6 +1,8 @@
-package ru.edu.vtisov.list;
+package ru.edu.vtisov.list.twopointers;
 
 // https://leetcode.com/problems/linked-list-cycle/
+
+import ru.edu.vtisov.list.ListNode;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {

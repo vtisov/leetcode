@@ -1,6 +1,8 @@
-package ru.edu.vtisov.list;
+package ru.edu.vtisov.list.twopointers;
 
 // https://leetcode.com/problems/middle-of-the-linked-list/
+
+import ru.edu.vtisov.list.ListNode;
 
 public class MiddleNode {
     public ListNode middleNode(ListNode head) {

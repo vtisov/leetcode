@@ -2,6 +2,8 @@ package ru.edu.vtisov.tree;
 
 // https://leetcode.com/problems/validate-binary-search-tree/
 
+import ru.edu.vtisov.util.TreeNode;
+
 public class ValidateBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
         return dfs(root, null, null);

@@ -1,25 +1,26 @@
 package ru.edu.vtisov.tree.bfs;
 
-import ru.edu.vtisov.tree.Node;
+import ru.edu.vtisov.util.Node;
 
 import java.util.LinkedList;
 
+// https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+
 public class PopulatingNextRightPointersInEachNode {
     public Node connect(Node root) {
-        if (root == null) return root;
         LinkedList<Node> queue = new LinkedList<>();
         queue.add(root);
-        while (!queue.isEmpty()) {
+        while(!queue.isEmpty()) {
             LinkedList<Node> temp = new LinkedList<>();
-            Node prev = null;
-            while (!queue.isEmpty()) {
-                Node node = queue.removeFirst();
-                if (node.left == null) continue;
-                temp.add(node.left);
-                temp.add(node.right);
-                if (prev != null) prev.next = node.left;
-                node.left.next = node.right;
-                prev = node.right;
+            Node stub = new Node();
+            Node previous = stub;
+            while(!queue.isEmpty()) {
+                Node current = queue.removeFirst();
+                if (current == null) continue;
+                temp.add(current.left);
+                temp.add(current.right);
+                previous.next = current;
+                previous = current;
             }
             queue = temp;
         }

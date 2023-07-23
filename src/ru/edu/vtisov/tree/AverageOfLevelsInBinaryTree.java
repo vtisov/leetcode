@@ -1,5 +1,7 @@
 package ru.edu.vtisov.tree;
 
+import ru.edu.vtisov.util.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
