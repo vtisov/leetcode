@@ -26,7 +26,7 @@ public:
         string result = "";
 
         for (int i = 0; i < dictionary.size(); i++) {
-            while (num > dictionary[i].first) {
+            while (num >= dictionary[i].first) {
                 result += dictionary[i].second;
                 num -= dictionary[i].first;
             }
