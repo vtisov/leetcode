@@ -1,0 +1,31 @@
+package ru.edu.vtisov.hashtable;
+
+// https://leetcode.com/problems/first-unique-character-in-a-string
+
+public class FirstUniqueCharacterInString {
+    public int firstUniqChar(String s) {
+        int[] count = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (count[s.charAt(i) - 'a'] == 1) return i;
+        }
+        return -1;
+    }
+}
+
+//class FirstUniqueCharacterInString {
+//    public:
+//    int firstUniqChar(string s) {
+//        int count[26] = {0};
+//        // vector<int> count(26);
+//        for (int i = 0; i < s.length(); i++) {
+//            count[s[i] - 'a']++;
+//        }
+//        for (int i = 0; i < s.length(); i++) {
+//            if (count[s[i] - 'a'] == 1) return i;
+//        }
+//        return -1;
+//    }
+//};
