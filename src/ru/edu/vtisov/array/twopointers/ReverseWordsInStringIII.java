@@ -6,18 +6,26 @@ import java.util.stream.Collectors;
 // https://leetcode.com/problems/reverse-words-in-a-string-iii/
 
 public class ReverseWordsInStringIII {
+
     public String reverseWords(String s) {
-        return Arrays.stream(s.split(" ")).map(str -> {
-                    char[] chars = str.toCharArray();
-                    reverseString(chars);
-                    return new String(chars);
-                })
-                .collect(Collectors.joining(" "));
+        int lastSpace = -1;
+        int len = s.length();
+        char[] chars = s.toCharArray();
+
+        for (int i = 0; i <= len; i++) {
+            if (i == len || chars[i] == ' ') {
+                int start = lastSpace + 1;
+                int end = i - 1;
+                reverseString(chars, start, end);
+                lastSpace = i;
+            }
+        }
+        return new String(chars);
     }
 
-    private void reverseString(char[] s) {
-        int i = 0;
-        int j = s.length - 1;
+    private void reverseString(char[] s, int start, int end) {
+        int i = start;
+        int j = end;
         while (i < j) {
             char temp = s[i];
             s[i] = s[j];
@@ -26,4 +34,25 @@ public class ReverseWordsInStringIII {
             j--;
         }
     }
+
+//    public String reverseWords(String s) {
+//        return Arrays.stream(s.split(" ")).map(str -> {
+//                    char[] chars = str.toCharArray();
+//                    reverseString(chars);
+//                    return new String(chars);
+//                })
+//                .collect(Collectors.joining(" "));
+//    }
+//
+//    private void reverseString(char[] s) {
+//        int i = 0;
+//        int j = s.length - 1;
+//        while (i < j) {
+//            char temp = s[i];
+//            s[i] = s[j];
+//            s[j] = temp;
+//            i++;
+//            j--;
+//        }
+//    }
 }
