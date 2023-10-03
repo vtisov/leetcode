@@ -3,7 +3,7 @@ package ru.edu.vtisov.stack;
 import java.util.Stack;
 
 // https://leetcode.com/problems/number-of-valid-subarrays
-
+// nice to solve https://leetcode.com/problems/next-greater-element-i
 public class NumberOfValidSubarrays {
     public int validSubarrays(int[] nums) {
         int answer = 0;
