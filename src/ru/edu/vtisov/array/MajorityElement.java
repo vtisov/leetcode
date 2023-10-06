@@ -5,19 +5,19 @@ package ru.edu.vtisov.array;
 public class MajorityElement {
 
     public int majorityElement(int[] nums) {
-        int result = 0;
+        int candidate = 0;
         int vote = 0;
         for (int num: nums) {
             if (vote == 0) {
-                result = num;
+                candidate = num;
                 vote++;
-            } else if (result == num) {
+            } else if (num == candidate) {
                 vote++;
             } else {
                 vote--;
             }
         }
-        return result;
+        return candidate;
     }
 
     // public int majorityElement(int[] nums) {
