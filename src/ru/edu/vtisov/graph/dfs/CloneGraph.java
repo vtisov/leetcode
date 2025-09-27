@@ -22,7 +22,7 @@ class Node {
 
 class CloneGraph {
 
-    Map<Node, Node> visited = new HashMap<>();
+    private Map<Node, Node> visited = new HashMap<>();
 
     public Node cloneGraph(Node node) {
         if (node == null) {
