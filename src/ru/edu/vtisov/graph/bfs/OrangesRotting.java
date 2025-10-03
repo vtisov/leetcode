@@ -2,56 +2,59 @@
 
 public class OrangesRotting {
     public int orangesRotting(int[][] grid) {
-        int[][] pos = new int[][] {
+        int[][] dirs = new int[][] {
             {-1, 0},
             {0, -1},
             {0, 1},
             {1, 0}
         };
 
-        Queue<Pair<Integer, Integer>> queue = new ArrayDeque<>();
-        int rows = grid.length;
-        int cols = grid[0].length;
+        Queue<int[]> queue = new ArrayDeque<>();
 
-        for (var i = 0; i < rows; i++) {
-            for (var j = 0; j < cols; j++) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] == 2) {
-                    queue.add(new Pair(i, j));
+                    queue.add(new int[]{i, j});
                 }
             }
         }
 
-        var count = 0;
+        int minutes = 0;
 
         while (!queue.isEmpty()) {
-            var size = queue.size();
+            int size = queue.size();
+
             for (int i = 0; i < size; i++) {
-                var current = queue.poll();                
-                grid[current.getKey()][current.getValue()] = 2;
-                for (int[] p: pos) {
-                    var x = current.getKey() + p[0];
-                    var y = current.getValue() + p[1];
-                    if (x < 0 || y < 0 || x >= rows || y >= cols
-                        || grid[x][y] == 2) {
-                        continue;
-                    }
+                int[] current = queue.poll();
+                int cx = current[0];
+                int cy = current[1];
+
+                for (int[] d : dirs) {
+                    int x = cx + d[0];
+                    int y = cy + d[1];
+
+                    if (x < 0 || y < 0 || x >= grid.length || y >= grid[0].length) continue;
+
                     if (grid[x][y] == 1) {
-                        queue.add(new Pair<>(x, y));
                         grid[x][y] = 2;
+                        queue.add(new int[]{x, y});
                     }
                 }
             }
+
+            // если в очереди остались новые элементы → будет ещё один раунд → увеличиваем время
             if (!queue.isEmpty()) {
-                count++;
+                minutes++;
             }
         }
-        return isRotten(grid) ? count : -1;
+
+        return isRotten(grid) ? minutes : -1;
     }
 
     private boolean isRotten(int[][] grid) {
-        for (var i = 0; i < grid.length; i++) {
-            for (var j = 0; j < grid[i].length; j++) {
-                if (grid[i][j] == 1) {
+        for (int[] row : grid) {
+            for (int cell : row) {
+                if (cell == 1) {
                     return false;
                 }
             }
