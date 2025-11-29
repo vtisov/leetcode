@@ -2,15 +2,16 @@ package ru.edu.vtisov.dp;
 
 // https://leetcode.com/problems/house-robber/
 
-public class HouseRobber {
+class Solution {
     public int rob(int[] nums) {
         if (nums.length == 1) return nums[0];
-        if (nums.length == 2) return Math.max(nums[0], nums[1]);
         int n = nums.length;
-        nums[2] = nums[0] + nums[2];
-        for (int i = 3; i < n; i++) {
-            nums[i] = nums[i] + Math.max(nums[i - 2], nums[i - 3]);
+        int[] memo = new int[n];
+        memo[0] = nums[0];
+        memo[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            memo[i] = Math.max(memo[i - 1], memo[i - 2] + nums[i]);
         }
-        return Math.max(nums[n - 1], nums[n - 2]);
+        return Math.max(memo[n - 1], memo[n - 2]);
     }
 }
