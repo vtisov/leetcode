@@ -4,6 +4,41 @@ import (
 	"math"
 )
 
+func minDifficulty(jobDifficulty []int, d int) int {
+	n := len(jobDifficulty)
+
+	if n < d {
+		return -1
+	}
+
+	dp := make([][]int, n)
+
+	for i := range dp {
+		dp[i] = make([]int, d+1)
+		for j := range dp[i] {
+			dp[i][j] = math.MaxInt
+		}
+	}
+
+	dp[n-1][d] = jobDifficulty[n-1]
+
+	for i := n - 2; i >= 0; i-- {
+		dp[i][d] = max(jobDifficulty[i], dp[i+1][d])
+	}
+
+	for day := d - 1; day > 0; day-- {
+		for i := day - 1; i < n-(d-day); i++ {
+			hardest := 0
+			for j := i; j < n-(d-day); j++ {
+				hardest = max(hardest, jobDifficulty[j])
+				dp[i][day] = min(dp[i][day], hardest+dp[j+1][day+1])
+			}
+		}
+	}
+	return dp[0][1]
+}
+
+/*
 type IterationInTheRecurrenceRelation struct {
 	n                   int
 	d                   int
@@ -63,3 +98,4 @@ func minDifficulty(jobDifficulty []int, d int) int {
 
 	return relation.dp(0, 1)
 }
+*/
