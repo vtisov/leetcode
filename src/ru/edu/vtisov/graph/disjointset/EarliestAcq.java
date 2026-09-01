@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/
+
 public class EarliestAcq {
     public int earliestAcq(int[][] logs, int n) {
         Arrays.sort(logs, (a, b) -> Integer.compare(a[0], b[0]));

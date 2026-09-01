@@ -3,6 +3,8 @@ package ru.edu.vtisov.dp;
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/longest-increasing-subsequence/
+
 public class LongestIncreasingSubsequence {
 
     public int lengthOfLIS(int[] nums) {

@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.binarysearch;
 
+// https://leetcode.com/problems/median-of-two-sorted-arrays/
+
 public class MedianOfTwoSortedArrays {
 
     public double findMedianSortedArrays(int[] array1, int[] array2) {

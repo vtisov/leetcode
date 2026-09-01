@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array;
 
+// https://leetcode.com/problems/rotate-array/
+
 public class RotateArray {
     public void rotate(int[] nums, int k) {
         int rotate = k % nums.length;

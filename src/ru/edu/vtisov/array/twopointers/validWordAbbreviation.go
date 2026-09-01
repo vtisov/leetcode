@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/valid-word-abbreviation/
+
 func validWordAbbreviation(word string, abbr string) bool {
     i, j := 0, 0
     for i < len(word) && j < len(abbr) {

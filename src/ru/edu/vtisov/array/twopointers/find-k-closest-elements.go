@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/find-k-closest-elements/
+
 func findClosestElements(arr []int, k int, x int) []int {
     result := []int{}
 

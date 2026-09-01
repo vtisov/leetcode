@@ -1,3 +1,5 @@
+-- https://leetcode.com/problems/monthly-transactions-i/
+
 -- Write your PostgreSQL query statement below
 select
     TO_CHAR(trans_date, 'YYYY-MM') AS month,

@@ -1,5 +1,7 @@
 package iteration_in_the_recurrence_relation
 
+// https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
+
 import (
 	"math"
 )

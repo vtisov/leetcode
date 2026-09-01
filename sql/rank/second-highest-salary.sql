@@ -1,3 +1,5 @@
+-- https://leetcode.com/problems/second-highest-salary/
+
 -- Write your PostgreSQL query statement below
 -- select (
 --     select distinct salary

@@ -1,5 +1,7 @@
 package ru.edu.vtisov.string;
 
+// https://leetcode.com/problems/longest-common-prefix/
+
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) return "";

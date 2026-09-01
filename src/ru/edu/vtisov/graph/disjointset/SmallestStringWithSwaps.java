@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/smallest-string-with-swaps/
+
 public class SmallestStringWithSwaps {
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
         UnionFind uf = new UnionFind(s.length());

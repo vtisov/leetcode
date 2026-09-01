@@ -1,5 +1,7 @@
 package ru.edu.vtisov.list;
 
+// https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
 public class RemoveDuplicatesFromSortedListII {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode result = new ListNode(0, head);

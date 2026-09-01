@@ -1,5 +1,7 @@
 package ru.edu.vtisov.array.binarysearch;
 
+// https://leetcode.com/problems/first-bad-version/
+
 public class FirstBadVersion extends VersionControl {
     public int firstBadVersion(int n) {
         int left = 0;

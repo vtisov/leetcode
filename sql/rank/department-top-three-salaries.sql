@@ -1,3 +1,5 @@
+-- https://leetcode.com/problems/department-top-three-salaries/
+
 -- Write your PostgreSQL query statement below
 select Department, Employee, Salary
 from (select d.name as Department,

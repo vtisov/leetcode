@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/maximize-distance-to-closest-person/
+
 import "fmt"
 
 func maxDistToClosest(seats []int) int {
