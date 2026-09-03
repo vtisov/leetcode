@@ -12,9 +12,9 @@ func findRotate(nums []int) int {
 	for i < j {
 		mid := i + (j-i)/2
 		if nums[mid] > nums[j] {
-			i = mid + 1
+			i = mid + 1 // минимум справа от mid
 		} else {
-			j = mid
+			j = mid // минимум — mid или левее
 		}
 	}
 	return i
