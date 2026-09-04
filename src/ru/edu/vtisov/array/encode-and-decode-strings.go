@@ -1,5 +1,7 @@
 package array
 
+// https://leetcode.com/problems/encode-and-decode-strings
+
 import "strings"
 
 type Codec struct{}
